@@ -1,0 +1,507 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/*End of boilerplate*/
+
+/* Custom Styles */
+
+:root {
+  --bg: #151b2b;
+  --card: #2d3250;
+  --card-alt: #424769;
+  --accent: #f9b17a;
+  --accent-soft: #676f9d;
+  --text-main: #ffffff;
+  --text-muted: #cbd5f5;
+  --border-soft: rgba(103, 111, 157, 0.45);
+  --accent-light: #a7b3e6;
+}
+
+/*Global styles*/
+body {
+  background: var(--bg);
+  color: var(--text-main);
+  font-family: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, 
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+  'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/*Center content*/
+  .site-header, main, .site-footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/*Links*/
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/*Nav-bar placement*/
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+/*Navigation link styles*/
+.nav-bar a {
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+
+/*Navigation hover effect*/
+.nav-bar a:hover {
+  opacity: 0.85;
+  border-color: var(--accent);
+}
+
+/*Hero section mobile first layout*/
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 32px 0;
+}
+
+/*Hero img style*/
+.hero-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--bg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/*Hero section first p element*/
+.hero-text p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 1.8rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/*Hero section h1 element*/
+.hero-text h1 {
+  font-size: 1.8rem;
+  margin: 8px 0 4px;
+  font-weight: 700;
+}
+
+/*Hero section last p element*/
+.hero-text p:last-child {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/*About section styles*/
+.about-section {
+  background: var(--card);
+  padding: 24px 20px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+
+/*About section mobile first layout*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*Margin for about section h2*/
+.about-main h2 {
+  margin-bottom: 8px;
+}
+
+/*About section mobile first layout for content*/
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+/*About section image styles*/
+.about-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/*About section image fill wrapper*/
+.about-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;}
+
+/*About section image overlay*/
+  .about-img-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
+
+/*About text section paragraph styles*/
+.about-text p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/*Sidebar style*/
+.about-aside {
+  background: var(--card-alt);
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+}
+
+/*Sidebar h3 style*/
+.about-aside h3 {
+  margin-bottom: 8px;
+}
+
+/*Sidebar list styles*/
+.about-aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*Sidebar list item styles*/
+.about-aside li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+/*Skill section styles*/
+.skill-section {
+  background: var(--card-alt);
+  padding: 24px 20px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+/*Skill section h2 margin*/
+.skill-section h2, .skill-section h3 {
+  margin-bottom: 12px;
+}
+
+/*Mobile first skill-list style*/
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+/*Mobile first Individual skill style*/
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/*Skill bar container style*/
+.skill-label {
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+/*Skill bar styles*/
+.skill-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/*Skill level indicator styles*/
+.skill-level {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 8px;
+}
+
+/*Soft skill cards container*/
+.soft-skill-cards {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px
+}
+
+.soft-skill {
+  background: var(--card);
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  color: var(--text-main);
+  font-size: 0.9rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
