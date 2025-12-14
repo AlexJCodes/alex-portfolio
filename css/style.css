@@ -495,6 +495,7 @@ a:hover {
   margin-bottom: 20px
 }
 
+/*Individual soft skill card styles*/
 .soft-skill {
   background: var(--card);
   padding: 8px 14px;
@@ -504,4 +505,49 @@ a:hover {
   font-size: 0.9rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
 }
+
+/*Project section styles*/
+.project-section {
+  background: var(--card);
+  padding: 24px 20px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+  box-shadow: 0 18px 40px rgba (0, 0, 0, 0.55);
+}
+
+/*Project section h2 margin*/
+.project-section h2 {
+  margin-bottom: 12px;
+}
+
+/*Mobile first project grid layout*/
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/*Individual project card styles*/
+.project-card {
+  background: var(--card-alt);
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/*Project card h3 styles*/
+.project-card h3 {
+  margin: 0;
+}
+
+/*Project card paragraph styles*/
+.project-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 
