@@ -512,6 +512,7 @@ a:hover {
   color: var(--text-muted);
 }
 
+/*Soft skills and languages list styles*/
 .soft-skills-list, .languages-list {
   list-style: none;
   padding: 0;
@@ -521,6 +522,7 @@ a:hover {
   gap: 10px;
 }
 
+/*Individual soft skill and language item styles*/
 .soft-card {
   background: var(--card);
   padding: 8px 14px;
@@ -542,7 +544,7 @@ a:hover {
 
 /*Project section h2 margin*/
 .project-section h2 {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 /*Mobile first project grid layout*/
@@ -563,16 +565,11 @@ a:hover {
   gap: 8px;
 }
 
-/*Project card h3 styles*/
-.project-card h3 {
-  margin: 0;
-}
 
 /*Project card paragraph styles*/
 .project-card p {
   color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /*Contact section styles*/
