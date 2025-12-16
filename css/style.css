@@ -252,7 +252,7 @@ textarea {
   --bg: #151b2b;
   --card: #2d3250;
   --card-alt: #424769;
-  --accent: #f9b17a;
+  --accent: #E89E73;
   --accent-soft: #676f9d;
   --text-main: #ffffff;
   --text-muted: #cbd5f5;
@@ -291,11 +291,18 @@ a:hover {
 
 /*Nav-bar placement*/
 .nav-bar {
+  padding: 16px 0;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-  padding: 16px 0;
 }
 
 /*Navigation link styles*/
@@ -308,7 +315,8 @@ a:hover {
 }
 
 /*Navigation hover effect*/
-.nav-bar a:hover {
+.nav-bar a:hover,
+.nav-bar a:focus-visible {
   opacity: 0.85;
   border-color: var(--accent);
 }
@@ -446,36 +454,44 @@ a:hover {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
 }
 
-/*Skill section h2 margin*/
-.skill-section h2, .skill-section h3 {
+.skill-section h2 {
+  margin-bottom: 12px;
+}
+
+/*Skill section h3 margin*/
+.skill-section h3 {
+  margin-top: 16px;
   margin-bottom: 12px;
 }
 
 /*Mobile first skill-list style*/
 .skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-bottom: 16px;
 }
 
 /*Mobile first Individual skill style*/
 .skill {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 }
 
 /*Skill bar container style*/
 .skill-label {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-main);
 }
 
 /*Skill bar styles*/
 .skill-bar {
+  position: relative;
   height: 8px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -487,22 +503,31 @@ a:hover {
   border-radius: 8px;
 }
 
-/*Soft skill cards container*/
-.soft-skill-cards {
-  display:flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px
+/*Skill percentage text styles*/
+.skill-percentage {
+  position: absolute;
+  right: 0;
+  top: -18px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
 }
 
-/*Individual soft skill card styles*/
-.soft-skill {
+.soft-skills-list, .languages-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.soft-card {
   background: var(--card);
   padding: 8px 14px;
   border-radius: 12px;
   border: 1px solid var(--border-soft);
-  color: var(--text-main);
   font-size: 0.9rem;
+  color: var(--text-main);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
 }
 
@@ -512,7 +537,7 @@ a:hover {
   padding: 24px 20px;
   border-radius: 18px;
   margin-bottom: 24px;
-  box-shadow: 0 18px 40px rgba (0, 0, 0, 0.55);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
 }
 
 /*Project section h2 margin*/
@@ -550,4 +575,67 @@ a:hover {
   line-height: 1.5;
 }
 
+/*Contact section styles*/
+.contact-section {
+  background: var(--card);
+  padding: 24px 20px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+/*Contact section h2 margin*/
+.contact-section h2 {
+  margin-bottom: 12px;
+}
+
+/*mobile first contact form layout*/
+.contact-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/*Contact form styles*/
+.contact-form {
+  background: var(--card-alt);
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid var(--border-soft);
+}
+
+/*Form group styles*/
+.form-group label {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  display: block;
+  margin-bottom: 6px;
+}
+
+/*Form input styles*/
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: var(--text-main);
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*Form select option styles*/
+.form-group select option {
+  background-color: var(--card-alt);
+  color: var(--text-main);
+}
+
+/*Form textarea styles*/
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.8;
+}
 

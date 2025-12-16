@@ -36,13 +36,14 @@
 
   <body>
     <!--my header-->
-    <header class="site-header">
-      <nav class="nav-bar">
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contactme">Contact Me</a>
-      </nav>
+    <nav class="nav-bar" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contactme">Contact Me</a></li>
+      </ul>
+    </nav>
 
       <!--hero section-->
       <div class="hero-content">
@@ -109,56 +110,112 @@
       <!--my skills-->
       <section id="skills" class="skill-section">
         <h2>My Skills</h2>
-
         <h3>Technical Skills</h3>
 
-        <div class="skill-list">
-          <div class="skill">
-            <span class="skill-label">HTML</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 30%"></div>
+        <!--html-->
+        <ul class="skill-list">
+          <li class="skill">
+            <span class="skill-label" id="skill-html">HTML</span>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              tabindex="0"
+              aria-labelledby="skill-html"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="30"
+            >
+              <div
+                class="skill-level"
+                style="width: 30%"
+                aria-hidden="true"
+              ></div>
+              <span class="skill-percentage" aria-hidden="true">30%</span>
             </div>
-          </div>
+          </li>
 
-          <div class="skill">
-            <span class="skill-label">CSS</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 25%"></div>
+          <!--css-->
+          <li class="skill">
+            <span class="skill-label" id="skill-css">CSS</span>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              tabindex="0"
+              aria-labelledby="skill-css"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="25"
+            >
+              <div
+                class="skill-level"
+                style="width: 25%"
+                aria-hidden="true"
+              ></div>
+              <span class="skill-percentage" aria-hidden="true">25%</span>
             </div>
-          </div>
+          </li>
 
-          <div class="skill">
-            <span class="skill-label">JavaScript</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 5%"></div>
+          <!--javascript-->
+          <li class="skill">
+            <span class="skill-label" id="skill-js">JavaScript</span>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              tabindex="0"
+              aria-labelledby="skill-js"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="5"
+            >
+              <div
+                class="skill-level"
+                style="width: 5%"
+                aria-hidden="true"
+              ></div>
+              <span class="skill-percentage" aria-hidden="true">5%</span>
             </div>
-          </div>
+          </li>
 
-          <div class="skill">
-            <span class="skill-label">Git-hub</span>
-            <div class="skill-bar">
-              <div class="skill-level" style="width: 5%"></div>
+          <!--github-->
+          <li class="skill">
+            <span class="skill-label" id="skill-github">GitHub</span>
+            <div
+              class="skill-bar"
+              role="progressbar"
+              tabindex="0"
+              aria-labelledby="skill-github"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="5"
+            >
+              <div
+                class="skill-level"
+                style="width: 5%"
+                aria-hidden="true"
+              ></div>
+              <span class="skill-percentage" aria-hidden="true">5%</span>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
 
-        <p class="under-construction">More skills - under construction...</p>
-
+        <!--soft skills-->
         <h3>Soft Skills</h3>
-        <div class="soft-skill-cards">
-          <div class="soft-skill">Teamwork</div>
-          <div class="soft-skill">Leadership</div>
-          <div class="soft-skill">Problem Solving</div>
-          <div class="soft-skill">Communication</div>
-          <div class="soft-skill">Adaptability</div>
-        </div>
 
+        <ul class="soft-skills-list">
+          <li class="soft-card">Communication</li>
+          <li class="soft-card">Teamwork</li>
+          <li class="soft-card">Problem Solving</li>
+          <li class="soft-card">Adaptability</li>
+          <li class="soft-card">Time Management</li>
+        </ul>
+
+        <!--languages-->
         <h3>Languages</h3>
-        <div class="soft-skill-cards">
-          <div class="soft-skill">Swedish - Native</div>
-          <div class="soft-skill">English - Fluent</div>
-          <div class="soft-skill">Thai - Beginner</div>
-        </div>
+        <ul class="languages-list">
+          <li class="soft-card">Swedish - Native</li>
+          <li class="soft-card">English - Fluent</li>
+          <li class="soft-card">Thai - Beginner</li>
+        </ul>
       </section>
 
       <!--projects-->
@@ -168,18 +225,18 @@
           <article class="project-card">
             <h3>Alex Animal World</h3>
             <p>
-              A fictional Zoo webiste created as a part of my application
+              A fictional Zoo website created as a part of my application
               project to Medieinstitutet. The website showcases various animals,
               their habitats, and visitor information. Focus on HTML structure,
-              CSS styling, and responsive design principles.
-              My first ever project made with code!
+              CSS styling, and responsive design principles. My first ever
+              project made with code!
             </p>
             <a
               href="https://alexjcodes.github.io/alex-animal-world/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              >View Project</a
+              View Project</a
             >
           </article>
 
@@ -200,72 +257,112 @@
         <h2>Contact Me</h2>
 
         <div class="contact-layout">
-          <form id="contact-form"></form>
+          <form id="contact-form" class="contact-form" onsubmit="return false;">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                placeholder="Your full name"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="name@example.com"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="+46 70 123 4567"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
+            <div class="form-group">
+              <label for="website">Your Website</label>
+              <input
+                type="url"
+                id="website"
+                name="website"
+                placeholder="https://yourwebsite.com"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="website">Your Website</label>
-            <input type="url" id="website" name="website" />
-          </div>
+            <div class="form-group">
+              <label for="reason">Reason for contact</label>
+              <select id="reason" name="reason" required>
+                <option value="" disabled selected hidden>
+                  Select an option
+                </option>
+                <option value="lia">LIA / Internship opportunity</option>
+                <option value="project">
+                  Feedback regarding the portfolio
+                </option>
+                <option value="other">Other</option>
+              </select>
+            </div>
 
-          <div class="form-group">
-            <label for="reason">Reason for contact</label>
-            <select id="reason" name="reason" required>
-              <option value="">Select an option</option>
-              <option value="lia">LIA / Internship opportunity</option>
-              <option value="project">Feedback regarding the portfolio</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                id="email_permission"
+                name="email_permission"
+              />
+              <label for="email_permission"
+                >I would like to get contacted by e-mail</label
+              >
+            </div>
 
-          <div class="checkbox-group">
-            <input type="checkbox" id="email_permission" name="email_permission" />
-            <label for="email_permission"
-              >I would like to get contacted by e-mail</label
-            >
-          </div>
+            <div class="form-group">
+              <label for="message">Your message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                placeholder="Write your message here..."
+                class="message-area"
+              ></textarea>
+            </div>
 
-          <div class="form-group">
-            <label for="message">Your message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              required
-              placeholder="Write your message here!"
-              class="message-area"
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn">Send Message</button>
+            <button type="submit" class="btn">Send</button>
+          </form>
         </div>
 
-        <div class="contact-info">
+        <aside class="contact-info">
           <h3>Contact Info</h3>
-          <p><a href="mailto:alexander.johansson8910@gmail.com">Email me</a></p>
-          <p>Call Me: +46706715275</p>
-          <p>Visit Me: Värnamo, Sverige</p>
-        </div>
-
-        <!--site footer-->
-        <footer class="site-footer">
-          <p>&copy; 2025 Alexander Johansson. All rights reserved</p>
-        </footer>
+          <address>
+            <p>
+              Email Me:
+              <a href="mailto:alexander.johansson8910@gmail.com"
+                >alexander.johansson8910@gmail.com</a
+              >
+            </p>
+            <p>
+              Call Me:
+              <a href="tel:+46706715275">+46 70 671 52 75</a>
+            </p>
+            <p>Visit Me: Värnamo, Småland, Sweden</p>
+          </address>
+        </aside>
       </section>
+
+      <footer class="site-footer">
+        <p>&copy; 2025 Alexander Johansson. All rights reserved</p>
+      </footer>
     </main>
 
     <script src="js/app.js"></script>
