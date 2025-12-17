@@ -36,14 +36,15 @@
 
   <body>
     <!--my header-->
-    <nav class="nav-bar" aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contactme">Contact Me</a></li>
-      </ul>
-    </nav>
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="link">About Me</a></li>
+          <li><a href="#skills" class="link">Skills</a></li>
+          <li><a href="#projects" class="link">Projects</a></li>
+          <li><a href="#contactme" class="link">Contact Me</a></li>
+        </ul>
+      </nav>
 
       <!--hero section-->
       <div class="hero-content">
@@ -105,7 +106,7 @@
             <li>Interests: Coding, Design, Padel, Travel</li>
           </ul>
         </aside>
-      </section>    
+      </section>
 
       <!--my skills-->
       <section id="skills" class="skill-section">
@@ -231,8 +232,8 @@
               CSS styling, and responsive design principles. My first ever
               project made with code!
             </p>
-            <a 
-              class="project-link"
+            <a
+              class="link"
               href="https://alexjcodes.github.io/alex-animal-world/"
               target="_blank"
               rel="noopener noreferrer"
@@ -241,7 +242,6 @@
             >
           </article>
 
-          
           <article class="project-card">
             <h3>Upcoming: Detailed HTML, UI with SASS and Tailwind</h3>
             <p>
@@ -256,7 +256,8 @@
             <h3>Planned: JavaScript Interactive Project</h3>
             <p>
               A future project where I plan to learn and implement JavaScript to
-              create interactive web elements. Something I look forward to as an eager student!
+              create interactive web elements. Something I look forward to as an
+              eager student!
             </p>
           </article>
         </div>
@@ -350,24 +351,34 @@
 
             <button type="submit" class="btn">Send</button>
           </form>
-        </div>
 
-        <aside class="contact-info">
-          <h3>Contact Info</h3>
-          <address>
-            <p>
-              Email Me:
-              <a href="mailto:alexander.johansson8910@gmail.com"
-                >alexander.johansson8910@gmail.com</a
-              >
-            </p>
-            <p>
-              Call Me:
-              <a href="tel:+46706715275">+46 70 671 52 75</a>
-            </p>
-            <p>Visit Me: Värnamo, Småland, Sweden</p>
-          </address>
-        </aside>
+          <!--My contact info-->
+          <aside class="contact-info">
+            <h3>Contact Info</h3>
+            <address class="contact-address">
+              <p>
+                Email Me:
+                <a href="mailto:alexander.johansson8910@gmail.com" class="link"
+                  >alexander.johansson8910@gmail.com</a
+                >
+              </p>
+              <p>
+                Call Me:
+                <a href="tel:+46706715275" class="link">+46 70 671 52 75</a>
+              </p>
+              <p>
+                Visit me:
+                <a
+                  href="https://maps.app.goo.gl/gmdG9dJVjPVnm67bA"
+                  class="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Värnamo, Småland, Sweden</a
+                >
+              </p>
+            </address>
+          </aside>
+        </div>
       </section>
 
       <footer class="site-footer">
