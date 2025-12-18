@@ -253,7 +253,7 @@ textarea {
   --bg: #151b2b;
   --card: #2d3250;
   --card-alt: #424769;
-  --accent: #E89E73;
+  --accent: #ffa586;
   --accent-soft: #676f9d;
   --text-main: #ffffff;
   --text-muted: #cbd5f5;
@@ -280,6 +280,7 @@ body {
     padding: 0 16px;
 }
 
+/*Link styles*/
 .link {
   display: inline-block;
 
@@ -449,7 +450,7 @@ body {
 
 /*Skill section styles*/
 .skill-section {
-  background: var(--card-alt);
+  background: var(--card);
   padding: 24px 20px;
   border-radius: 18px;
   margin-bottom: 24px;
@@ -526,7 +527,7 @@ body {
 
 /*Individual soft skill and language item styles*/
 .soft-card {
-  background: var(--card);
+  background: var(--card-alt);
   padding: 8px 14px;
   border-radius: 12px;
   border: 1px solid var(--border-soft);
