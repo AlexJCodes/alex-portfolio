@@ -82,7 +82,6 @@
                 alt="Alexander Johansson walking the mountains of the country of Georgia during summer time"
                 loading="lazy"
               />
-              />
             </div>
             <div class="about-text">
               <p>
@@ -149,14 +148,14 @@
           <div class="skill">
             <span class="skill-label">GitHub</span>
             <div class="skill-bar">
-              <div class="skill-level" style="width: 50%"></div>
+              <div class="skill-level" style="width: 70%"></div>
             </div>
           </div>
 
           <div class="skill">
             <span class="skill-label">Figma</span>
             <div class="skill-bar">
-              <div class="skill-level" style="width: 70%"></div>
+              <div class="skill-level" style="width: 50%"></div>
             </div>
           </div>
         </div>
@@ -185,36 +184,41 @@
         <h2>Projects</h2>
         <div class="project-grid">
           <article class="project-card">
-            <img
-              src="img/projects/project1_thumbnail.jpg"
-              alt="Project 1 Thumbnail"
-              class="project-image"
-              loading="lazy"
-            />
-            <h3>Project One</h3>
-            <p></p>
+            <h3>Alex Animal World</h3>
+            <p>
+              A fictional Zoo website created as a part of my application
+              project to Medieinstitutet. The website showcases various animals,
+              their habitats, and visitor information. Focus on HTML structure,
+              CSS styling, and responsive design principles. My first ever
+              project made with code!
+            </p>
+            <a
+              class="link"
+              href="https://alexjcodes.github.io/alex-animal-world/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project</a
+            >
           </article>
 
           <article class="project-card">
-            <img
-              src="img/projects/project2_thumbnail.jpg"
-              alt="Project 2 Thumbnail"
-              class="project-image"
-              loading="lazy"
-            />
-            <h3>Project Two</h3>
-            <p></p>
+            <h3>Upcoming: Detailed HTML, UI with SASS and Tailwind</h3>
+            <p>
+              An upcoming project where I will be focusing on advanced HTML5
+              semantics, creating a polished user interface using SASS for
+              styling, and utilizing Tailwind CSS framework for rapid UI
+              development. Stay tuned for more details!
+            </p>
           </article>
 
           <article class="project-card">
-            <img
-              src="img/projects/project3_thumbnail.jpg"
-              alt="Project 3 Thumbnail"
-              class="project-image"
-              loading="lazy"
-            />
-            <h3>Project Three</h3>
-            <p></p>
+            <h3>Planned: JavaScript Interactive Project</h3>
+            <p>
+              A future project where I plan to learn and implement JavaScript to
+              create interactive web elements. Something I look forward to as an
+              eager student!
+            </p>
           </article>
         </div>
       </section>
@@ -246,10 +250,16 @@
               />
             </div>
 
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="+46 70 123 4567"
+              />
+            </div>
 
             <div class="form-group">
               <label for="website">Your Website</label>
@@ -286,28 +296,47 @@
               >
             </div>
 
-          <div class="form-group">
-            <label for="message">Your message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              required
-              placeholder="Write your message here!"
-              class="message-area"
-            ></textarea>
-          </div>
+            <div class="form-group">
+              <label for="message">Your message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                placeholder="Write your message here..."
+                class="message-area"
+              ></textarea>
+            </div>
 
             <button type="submit" class="btn">Send</button>
           </form>
         </div>
 
-        <div class="contact-info">
+        <aside class="contact-info">
           <h3>Contact Info</h3>
-            <p><a href="mailto:alexander.johansson8910@gmail.com">Email me</a>
-            <p>Call Me: +46706715275</p>
-            <p>Visit Me: Värnamo, Sverige</p>
-        </div>
+          <address class="contact-address">
+            <p>
+              Email Me:
+              <a href="mailto:alexander.johansson8910@gmail.com" class="link"
+                >alexander.johansson8910@gmail.com</a
+              >
+            </p>
+            <p>
+              Call Me:
+              <a href="tel:+46706715275" class="link">+46 70 671 52 75</a>
+            </p>
+            <p>
+              Visit me:
+              <a
+                href="https://maps.app.goo.gl/gmdG9dJVjPVnm67bA"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Värnamo, Småland, Sweden</a
+              >
+            </p>
+          </address>
+        </aside>
       </section>
 
       <footer class="site-footer">
